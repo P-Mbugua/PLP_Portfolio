@@ -201,7 +201,7 @@ img {
 .home__social-icon {
   width: max-content;
   margin-bottom: var(--mb-2);
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--second-color);
 }
 .home__social-icon:hover {
@@ -239,9 +239,15 @@ img {
 }
 
 .button#MyWorks:hover {
-  background: #00ff66;       /* Add a background color on hover */
-  color: white;              /* Change text color to white on hover */
-  border: 2px solid #00ff66; /* Keep the green border on hover */
+  background: #00ff66;     
+  color: white;            
+  border: 2px solid #00ff66; 
+}
+
+.aboutsocials{
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
 }
 
 .button:hover {
@@ -252,7 +258,6 @@ img {
 
 /* ===== ABOUT =====*/
 .about__container {
-  row-gap: 2rem;
   text-align: center;
 }
 .about__subtitle {
@@ -952,5 +957,26 @@ footer {
 
 
 
+/* Floating Whatsapp Icon Styling  */
+#whatsapp-icon {
+  position: fixed;
+  bottom: 10px; /* Adjust the distance from the bottom */
+  right: 30px; /* Adjust the distance from the right */
+  z-index: 1000; /* Ensures the icon stays on top */
+  background-color: #25D366; /* WhatsApp green color */
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#whatsapp-icon img {
+  width: 50px; /* Size of the WhatsApp icon */
+  height: 50px;
+}
+
+#whatsapp-icon:hover {
+  transform: scale(1.1); /* Zoom effect when hovering */
+}
 
 
