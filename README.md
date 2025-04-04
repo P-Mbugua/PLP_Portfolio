@@ -9,11 +9,14 @@ Welcome to my portfolio! Here you'll find a showcase of my work, skills, and pro
 - **[Skills](#skills)**
 - **[Experience](#experience)**
 - **[Education](#education)**
+- **[Acknowledgments](#acknowledgments)**
 - **[Contact](#contact)**
+- **[Future Goals](#future-goals)**
+- **[Testimonial](#testimonial)**
 
 ## **About Me**
 
-Hello! I'm Peter **(A student in Moringa School pursuing Fullstack Development)**, a passionate developer with experience in **FullStack Development | Graphics Design | Project Management | Office Assistant.** I have a strong foundation in ***HTML5, CSS, JavaScript, React, Tailwind CSS, Python & SQLite and am always eager to learn and take on new challenges.***
+Hello! I'm Peter **(A student in Moringa School pursuing Fullstack Development)**, a passionate developer with experience in **FullStack Development | Graphics Design | Project Management | Office Assistant**. I have a strong foundation in ***HTML5, CSS, JavaScript, React, Tailwind CSS, Python & SQLite, and am always eager to learn and take on new challenges.*** My journey in tech has been a blend of hands-on projects, learning, and problem-solving.
 
 ## **Projects**
 
@@ -30,12 +33,21 @@ Here are some of the notable projects I've worked on as a ***Junior Developer | 
 * **Link**: [Live Demo](link-to-demo) | [Source Code](link-to-source-code)
 
 ### 2. Delivery Management System (PARCELPOA)
-* **Description**: A brief overview of the project.
-* **Technologies**: List of technologies used.
-* **Features**: Key features and functionalities.
+* **Description**: A system for managing deliveries, tracking parcels, and optimizing delivery routes.
+* **Technologies**: React, Node.js, MongoDB, Express.
+* **Features**:
+    1. Parcel tracking for customers.
+    2. Admin panel for managing deliveries and customer info.
+    3. Real-time notifications for delivery status updates.
 * **Link**: [Live Demo](link-to-demo) | [Source Code](link-to-source-code)
 
-*Add more projects as needed.*
+### 3. Personal Portfolio Website
+* **Description**: This portfolio website showcases my projects, skills, and background.
+* **Technologies**: HTML, CSS, JavaScript, Formspree.
+* **Features**:
+    1. Contact form integrated with Formspree to handle submissions.
+    2. Responsive design for mobile and desktop views.
+* **Link**: [Live Demo](link-to-demo) | [Source Code](link-to-source-code)
 
 ## **Skills**
 
@@ -43,9 +55,9 @@ I have experience with the following technologies and tools:
 
 **Programming Languages**: HTML, CSS, JavaScript.  
 - **Web Technologies**: HTML, CSS, React.  
-- **Backend Technologies**: Formspree (Third-party service to handle backend email functionalities).
-- **Databases**: MySQL.  
-- **Tools & Platforms**: Git.
+- **Backend Technologies**: Formspree (Third-party service to handle backend email functionalities), Node.js.  
+- **Databases**: MySQL, MongoDB.  
+- **Tools & Platforms**: Git, GitHub, Netlify.
 
 ## **Experience**
 
@@ -66,7 +78,21 @@ I have experience with the following technologies and tools:
 * **Graduation Year**: 2024
 
 ## **Acknowledgments**
+
 I would like to recognize and thank my peers **Mary, Mark, and Jaja** for their invaluable assistance during the development period of my projects. Their support and guidance helped me achieve the progress I have made.
+
+## **Future Goals**
+
+As I continue my journey in full-stack development, my main goal is to:
+- **Expand my skills** in backend development by learning more about Node.js and other backend technologies.
+- **Master mobile app development** using React Native.
+- **Contribute to open-source projects** and collaborate with other developers.
+- **Work on large-scale projects** and refine my skills in software architecture and design patterns.
+
+## **Testimonial**
+
+_"Peter has demonstrated exceptional growth in his journey as a FullStack developer. His passion for technology and his dedication to learning are evident in the quality of his work and his commitment to improving his skills."_  
+— **Mentor at Moringa School**
 
 ## **Contact**
 
