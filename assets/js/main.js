@@ -115,3 +115,44 @@ document.getElementById("contact-form").addEventListener("submit", function(even
         document.getElementById("status-message").innerText = "Network error. Try again.";
     });
 });
+
+
+
+
+
+
+// Expandable section
+document.addEventListener("DOMContentLoaded", () => {
+    const experienceItems = document.querySelectorAll('.experience__item');
+  
+    const revealItems = () => {
+      const windowHeight = window.innerHeight;
+  
+      experienceItems.forEach(item => {
+        const itemTop = item.getBoundingClientRect().top;
+        if (itemTop < windowHeight - 100) {
+          item.style.opacity = 1;
+          item.style.transform = 'translateY(0)';
+        }
+      });
+    };
+  
+    // Trigger on scroll
+    window.addEventListener('scroll', revealItems);
+  
+    // Trigger once when the page loads
+    revealItems();
+  });
+  
+
+  window.addEventListener('DOMContentLoaded', function () {
+    // Select all progress bars
+    const bars = document.querySelectorAll('.skills__bar');
+  
+    // Set the width of each bar based on its class or data attribute
+    bars.forEach((bar) => {
+      const percentage = bar.getAttribute('data-percentage'); // You can also use a data attribute to store the percentage
+      bar.style.width = percentage; // Animate width to the specified percentage
+    });
+  });
+  
