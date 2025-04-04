@@ -55,3 +55,63 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+
+
+
+
+
+// Footer section start
+document.getElementById("year").textContent = new Date().getFullYear();
+
+async function fetchLastUpdated() {
+    try {
+        let response = await fetch("https://api.github.com/repos/P-Mbugua/PLP_Portfolio/commits");
+        let data = await response.json();
+        if (data.length > 0) {
+            let lastCommitDate = new Date(data[0].commit.author.date).toLocaleString();
+            document.getElementById("last-updated").textContent = lastCommitDate;
+        }
+    } catch (error) {
+        console.error("Error fetching last commit date:", error);
+        document.getElementById("last-updated").textContent = "Unavailable";
+    }
+}
+
+fetchLastUpdated();
+
+
+
+
+
+
+
+// Contact Form 
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+    
+    let formspreeURL = "https://formspree.io/f/xyzgqzkj"; 
+
+    fetch(formspreeURL, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ name, email, message })
+    })
+    .then(response => {
+        if (response.ok) {
+            document.getElementById("status-message").innerText = "Message sent successfully!";
+            document.getElementById("contact-form").reset();
+        } else {
+            document.getElementById("status-message").innerText = "Error sending message.";
+        }
+    })
+    .catch(error => {
+        document.getElementById("status-message").innerText = "Network error. Try again.";
+    });
+});

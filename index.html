@@ -8,6 +8,7 @@
 
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KEY.js" crossorigin="anonymous"></script>
 
         <title>Mbugua Peter</title>
     </head>
@@ -41,12 +42,12 @@
                 <div class="home__data">
                     <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Mbugua</span><br> Frontend Developer</h1>
 
-                    <a href="https://mbuguapeter.netlify.app/contact" class="button" target="_blank" rel="noopener noreferrer">
-                        Work With Me
-                    </a>
-                    <a href="https://mbuguapeter.netlify.app/portfolio" class="button" target="_blank" rel="noopener noreferrer">
-                        My Works
-                    </a>
+                        <a href="https://mbuguapeter.netlify.app/contact" class="button" target="_blank" rel="noopener noreferrer">
+                            Work With Me
+                        </a>
+                        <a href="https://mbuguapeter.netlify.app/portfolio" class="button" target="_blank" rel="noopener noreferrer">
+                            My Works
+                        </a>
                     
                 </div>
 
@@ -193,133 +194,74 @@
             </section>
 
             <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
+            <div class="contact-wrapper" id="contact">
+                <!-- Left: Contact Form -->
+                 <div>
+                    <h2>GET <span class="highlight">IN TOUCH</span></h2>
+                    <p class="sub-text">
+                        I'M ALWAYS OPEN TO DISCUSSING <strong>DEVELOPER RELATIONS, SOFTWARE DEV WORK, OR PARTNERSHIPS</strong>
+                    </p>
+                 </div>
+                <div class="InsideContent">
+                
+                 <div class="contact-form">
+                   
+        
+                    <form id="contact-form">
+                        <div class="input-box">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="input-box">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="input-box">
+                            <i class="fas fa-comment-alt"></i>
+                            <textarea id="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit"><i class="fas fa-paper-plane"></i> SEND MESSAGE</button>
                     </form>
+        
+                    <p id="status-message"></p>
                 </div>
-            </section>
+        
+                <!-- Right: Contact Details -->
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> +254 701 571 745</p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:petermbuguangumi@gmail.com">petermbuguangumi@gmail.com</a></p>
+                    <p><i class="fab fa-twitter"></i> <strong>Twitter:</strong> <a href="https://twitter.com/mbugua276">@mbugua276</a></p>
+                    <p><i class="fab fa-github"></i> <strong>GitHub:</strong> <a href="https://github.com/P-Mbugua">P-Mbugua</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Limuru, Kiambu, Kenya</p>
+                </div>
+            </div>
+            </div>
         </main>
 
+
+
+
+
+
+        
+
         <!--===== FOOTER =====-->
-        <footer class="footer">
-            <div class="footer__overlay"></div> <!-- Background Layer -->
-            <div class="footer__mask"></div> <!-- Mask Layer -->
-            <div class="footer__content">
-                <p class="footer__title">Mbugua</p>
-                <div class="footer__social">
-                    <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
-                    <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
-                    <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; <span id="year"></span> Designed by <a href="https://mbuguapeter.netlify.app" target="_blank"><span class="Developer">Mbugua Peter</span></a></p>
+                <p>Last Update: <span id="last-updated">Fetching...</span></p>
+                <p>Building innovative software | Website solutions.</p>
+                <div class="social-links">
+                    <a href="https://twitter.com/mbugua276" target="_blank" class="social-link">Twitter</a> |
+                    <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" class="social-link">LinkedIn</a> |
+                    <a href="https://github.com/P-Mbugua" target="_blank" class="social-link">GitHub</a>
                 </div>
-                <p class="footer__copy">&#169; 2025 Mbugua. All Rights Reserved.</p>
+                
+
             </div>
+          
         </footer>
-        
-        <style>
-        /* Main Footer Styling */
-        .footer {
-            position: relative;
-            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-            padding: 3rem 2rem;
-            text-align: center;
-            color: white;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 250px;
-            box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.3);
-        }
-        
-        /* Background Image Layer */
-        .footer__overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('https://source.unsplash.com/1600x900/?technology,dark') no-repeat center center/cover;
-            opacity: 0.1;
-            z-index: 0;
-        }
-        
-        /* Mask Layer for Wave Effect */
-        .footer__mask {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 100px;
-            background: url('https://svgshare.com/i/uRo.svg') repeat-x;
-            opacity: 0.5;
-            animation: wave-animation 12s infinite linear;
-            z-index: 1;
-        }
-        
-        /* Subtle Wave Animation */
-        @keyframes wave-animation {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-        
-        /* Footer Content Box */
-        .footer__content {
-            position: relative;
-            z-index: 2;
-            backdrop-filter: blur(15px);
-            padding: 1.5rem;
-            border-radius: 12px;
-            background: rgba(255, 255, 255, 0.08);
-            width: 80%;
-            max-width: 500px;
-            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
-        }
-        
-        /* Footer Title */
-        .footer__title {
-            font-size: 2.2rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #f5f5f5;
-        }
-        
-        /* Social Icons */
-        .footer__social {
-            margin: 1rem 0;
-        }
-        
-        .footer__icon {
-            font-size: 1.8rem;
-            color: #ffffff;
-            margin: 0 12px;
-            transition: transform 0.3s ease, color 0.3s ease;
-        }
-        
-        .footer__icon:hover {
-            transform: scale(1.15);
-            color: #f0c330;
-        }
-        
-        /* Footer Text */
-        .footer__copy {
-            font-size: 0.95rem;
-            opacity: 0.85;
-            margin-top: 1rem;
-            font-weight: 500;
-            letter-spacing: 1px;
-        }
-        </style>
-        
-        
 
 
         <!--===== SCROLL REVEAL =====-->
