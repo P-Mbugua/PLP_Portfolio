@@ -149,17 +149,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // Select all progress bars
     const bars = document.querySelectorAll('.skills__bar');
   
-    // Set the width of each bar based on its class or data attribute
     bars.forEach((bar) => {
-      const percentage = bar.getAttribute('data-percentage'); // You can also use a data attribute to store the percentage
-      bar.style.width = percentage; // Animate width to the specified percentage
+      const percentage = bar.getAttribute('data-percentage');
+      bar.style.width = percentage; 
     });
   });
   
 
 
-
-
-
-
-//   Whatspp Icon
